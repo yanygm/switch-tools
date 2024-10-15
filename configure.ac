@@ -14,16 +14,6 @@ AC_PROG_CC
 
 AC_SYS_LARGEFILE
 
-PKG_CHECK_MODULES([LZ4],
-		[have_lz4="yes"],
-		[PKG_CHECK_MODULES([LZ4],
-			[have_lz4="yes"])
-])
-
-PKG_CHECK_MODULES([ZLIB], zlib, [
-  AC_DEFINE([HAVE_LIBZ], [1], [Define if using zlib.])
-])
-
 NET_LIBS=""
 
 case "$host" in
