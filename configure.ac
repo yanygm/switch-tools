@@ -15,10 +15,8 @@ AC_PROG_CC
 AC_SYS_LARGEFILE
 
 PKG_CHECK_MODULES([LZ4],
-		[liblz4 >= 1.10.0],
 		[have_lz4="yes"],
 		[PKG_CHECK_MODULES([LZ4],
-			[liblz4 >= 1.10.0],
 			[have_lz4="yes"])
 ])
 
