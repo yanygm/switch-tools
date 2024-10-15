@@ -18,7 +18,7 @@ PKG_CHECK_MODULES([LZ4],
 		[liblz4 >= 1.7.1 liblz4 < 100],
 		[have_lz4="yes"],
 		[PKG_CHECK_MODULES([LZ4],
-			[liblz4 >= 131],
+			[liblz4 >= 1.3.1],
 			[have_lz4="yes"])
 ])
 
